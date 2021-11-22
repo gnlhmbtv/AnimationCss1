@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.rectangle{
+    position: relative;
+    margin: 300px auto;
+    border:2px solid darkred;
+    background-color: rgb(119, 0, 255);
+    width: 600px;
+    height: 60px;
+    transform: rotate(30deg);
+}
+.square{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: coral;
+    animation-name: example;
+    animation-duration: 5s;
+    /* transform: rotate(20deg) */
+}
+@keyframes example{
+    0% 
+    {
+        transform:rotate(0deg);
+        left: 0;
+    }
+    /* 10% 
+    {
+        transform:rotate(36deg) translateX(30px);
+    } */
+    25%
+    {
+         transform:rotate(90deg);
+         left: 25%;
+    }
+    /* 30% 
+    {
+        transform:rotate(108deg);
+    }
+    40% 
+    {
+        transform:rotate(144deg);
+    } */
+    50% 
+    {
+        transform:rotate(180deg);
+        left: 50%;
+    }
+    /* 60% 
+    {
+        transform:rotate(216deg);
+    } */
+    75% 
+    {
+        transform:rotate(270deg);
+        left: 75%;
+    }
+    /* 80% 
+    {
+        transform:rotate(288deg);
+    }
+    90% 
+    {
+        transform:rotate(334deg);
+    } */
+    100% 
+    {
+        transform:rotate(360deg);
+        left: 90%;
+    }
+    
+}
